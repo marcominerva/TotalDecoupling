@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TotalDecoupling.DataAccessLayer\TotalDecoupling.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\TotalDecoupling.Shared\TotalDecoupling.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
