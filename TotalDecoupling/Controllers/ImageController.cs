@@ -1,7 +1,6 @@
 ﻿using System.Net.Mime;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using TotalDecoupling.BusinessLayer.Services;
+using TotalDecoupling.BusinessLayer.Services.Interfaces;
 
 namespace TotalDecoupling.Controllers;
 

@@ -1,8 +1,6 @@
-﻿using System;
-using System.Net.Mime;
-using System.Threading.Tasks;
+﻿using System.Net.Mime;
 using Microsoft.AspNetCore.Mvc;
-using TotalDecoupling.BusinessLayer.Services;
+using TotalDecoupling.BusinessLayer.Services.Interfaces;
 using TotalDecoupling.Shared.Models;
 
 namespace TotalDecoupling.Controllers;

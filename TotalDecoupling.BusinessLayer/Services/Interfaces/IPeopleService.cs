@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using TotalDecoupling.BusinessLayer.Models;
+﻿using TotalDecoupling.BusinessLayer.Models;
 using TotalDecoupling.Shared.Models;
 
-namespace TotalDecoupling.BusinessLayer.Services;
+namespace TotalDecoupling.BusinessLayer.Services.Interfaces;
 
 public interface IPeopleService
 {
