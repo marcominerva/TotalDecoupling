@@ -1,12 +1,11 @@
-﻿namespace TotalDecoupling.BusinessLayer.Models
+﻿namespace TotalDecoupling.BusinessLayer.Models;
+
+public enum FailureReason
 {
-    public enum FailureReason
-    {
-        None,
-        ItemNotFound,
-        Forbidden,
-        DatabaseError,
-        ClientError,
-        GenericError
-    }
+    None,
+    ItemNotFound,
+    Forbidden,
+    DatabaseError,
+    ClientError,
+    GenericError
 }

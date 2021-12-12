@@ -1,19 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TotalDecoupling.BusinessLayer.Models
+namespace TotalDecoupling.BusinessLayer.Models;
+
+public interface IOperationResult
 {
-    public interface IOperationResult
-    {
-        Exception Error { get; }
+    Exception Error { get; }
 
-        string ErrorDetail { get; }
+    string ErrorDetail { get; }
 
-        string ErrorMessage { get; }
+    string ErrorMessage { get; }
 
-        FailureReason FailureReason { get; }
+    FailureReason FailureReason { get; }
 
-        bool Success { get; }
-        IEnumerable<ValidationError> ValidationErrors { get; }
-    }
+    bool Success { get; }
+    IEnumerable<ValidationError> ValidationErrors { get; }
 }
