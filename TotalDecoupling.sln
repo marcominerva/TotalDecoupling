@@ -9,7 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TotalDecoupling.BusinessLay
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TotalDecoupling.DataAccessLayer", "TotalDecoupling.DataAccessLayer\TotalDecoupling.DataAccessLayer.csproj", "{BB1BFB5C-F64F-4381-A343-05B4ECE575FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TotalDecoupling.Shared", "TotalDecoupling.Shared\TotalDecoupling.Shared.csproj", "{B4779916-4D28-4AC2-A452-02104E1AC309}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TotalDecoupling.Shared", "TotalDecoupling.Shared\TotalDecoupling.Shared.csproj", "{B4779916-4D28-4AC2-A452-02104E1AC309}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4B1E5CBF-1492-4AA5-A3F3-5000C2972137}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
