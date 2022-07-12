@@ -1,13 +1,9 @@
-﻿using System.Net.Mime;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using TotalDecoupling.BusinessLayer.Services.Interfaces;
 using TotalDecoupling.Shared.Models;
 
 namespace TotalDecoupling.Controllers;
 
-[ApiController]
-[Route("api/[controller]")]
-[Produces(MediaTypeNames.Application.Json)]
 public class PeopleController : ControllerBase
 {
     private readonly IPeopleService peopleService;

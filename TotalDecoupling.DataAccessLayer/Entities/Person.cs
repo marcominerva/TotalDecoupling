@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TotalDecoupling.DataAccessLayer.Entities;
+﻿namespace TotalDecoupling.DataAccessLayer.Entities;
 
 public class Person
 {

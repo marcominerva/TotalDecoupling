@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace TotalDecoupling.BusinessLayer.Models;
+﻿namespace TotalDecoupling.BusinessLayer.Models;
 
 public interface IOperationResult
 {
@@ -14,5 +11,6 @@ public interface IOperationResult
     FailureReason FailureReason { get; }
 
     bool Success { get; }
+
     IEnumerable<ValidationError> ValidationErrors { get; }
 }

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace TotalDecoupling.BusinessLayer.Models;
+﻿namespace TotalDecoupling.BusinessLayer.Models;
 
 public class OperationResult<T> : IOperationResult
 {

@@ -34,7 +34,7 @@ public class PeopleService : IPeopleService
     public async Task<OperationResult<Person>> GetAsync(Guid id)
     {
         var dbPerson = await dbContext.GetData<Entities.Person>().FirstOrDefaultAsync(p => p.Id == id);
-        if (dbPerson == null)
+        if (dbPerson is null)
         {
             return OperationResult.Fail(FailureReason.ItemNotFound);
         }
@@ -54,7 +54,7 @@ public class PeopleService : IPeopleService
         var dbPerson = person.Id != Guid.Empty ? await dbContext.GetData<Entities.Person>(trackingChanges: true)
             .FirstOrDefaultAsync(p => p.Id == person.Id) : null;
 
-        if (dbPerson == null)
+        if (dbPerson is null)
         {
             var samePersonExists = await dbContext.GetData<Entities.Person>()
                 .AnyAsync(p => p.FirstName == person.FirstName && p.LastName == person.LastName
@@ -90,7 +90,7 @@ public class PeopleService : IPeopleService
     {
         var dbPerson = await dbContext.GetData<Entities.Person>(trackingChanges: true).FirstOrDefaultAsync(p => p.Id == id);
 
-        if (dbPerson != null)
+        if (dbPerson is not null)
         {
             if (dbPerson.FirstName == "Admin")
             {

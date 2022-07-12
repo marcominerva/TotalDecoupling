@@ -1,12 +1,8 @@
-﻿using System.Net.Mime;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using TotalDecoupling.BusinessLayer.Services.Interfaces;
 
 namespace TotalDecoupling.Controllers;
 
-[ApiController]
-[Route("api/[controller]")]
-[Produces(MediaTypeNames.Application.Json)]
 public class ImageController : ControllerBase
 {
     private readonly IImageService imageService;

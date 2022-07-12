@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
+﻿using System.Diagnostics;
 using System.Net;
 using System.Net.Mime;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Routing;
 using Microsoft.AspNetCore.WebUtilities;
 using TotalDecoupling.BusinessLayer.Models;
 
@@ -86,7 +81,7 @@ public class ControllerBase : Microsoft.AspNetCore.Mvc.ControllerBase
         var problemDetails = new ProblemDetails
         {
             Status = statusCode,
-            Type = $"https://httpstatuses.com/{statusCode}",
+            Type = $"https://httpstatuses.io/{statusCode}",
             Title = title ?? ReasonPhrases.GetReasonPhrase(statusCode),
             Detail = detail,
             Instance = HttpContext.Request.Path
